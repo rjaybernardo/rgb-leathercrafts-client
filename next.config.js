@@ -4,6 +4,18 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'rgb-leathercrafts.s3.amazonaws.com',
+      },
+    ],
+  },
 }
 
 module.exports = nextConfig

@@ -9,6 +9,7 @@ import FlyingButton from '@/components/FlyingButton'
 import HeartOutlineIcon from '@/components/icons/HeartOutlineIcon'
 import HeartSolidIcon from '@/components/icons/HeartSolidIcon'
 import axios from 'axios'
+import Image from 'next/image'
 
 const ProductWrapper = styled.div`
   button {
@@ -123,7 +124,13 @@ export default function ProductBox({
           <WishlistButton wished={isWished} onClick={addToWishlist}>
             {isWished ? <HeartSolidIcon /> : <HeartOutlineIcon />}
           </WishlistButton>
-          <img src={images?.[0]} alt='' />
+          <Image
+            src={images?.[0]}
+            alt={title}
+            layout='responsive'
+            width='300'
+            height='200'
+          />
         </div>
       </WhiteBox>
       <ProductInfoBox>
