@@ -8,3 +8,5 @@
 - Used Styled Components
 - Add Stripe for payment
 - Responsive Website
+
+to run: yarn run dev
